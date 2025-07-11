@@ -1,0 +1,4645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PL_ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FILE_PREFIX="ipl_hook_rx_priv" HAS_BITLENGTH="true" SCHEMA_VERSION="1.18.0">
+  <BUS_SIGNALS>
+    <BUS_SIGNAL>
+      <NAME>BoolDummy</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>unit1</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>unit1</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>BoolDummyText</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>DISABLE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>ENABLE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_antiJerkEnable</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC></DESC>
+      <TEXT>
+        <VALUE>DISABLE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>ENABLE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkEnable</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_antiJerkGain</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0.15</PHY_MIN>
+        <PHY_MAX>10.38</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0.15</ORG_PHY_MIN>
+        <ORG_PHY_MAX>10.38</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkGain</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>10</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>13</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_antiJerkMaxTorq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>40</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>40</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x40</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkMaxTorq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>7</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>40</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_antiJerkMinTorq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>40</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>40</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x40</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkMinTorq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>7</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>33</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_antiJerkSpeedThres</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>30</PHY_MIN>
+        <PHY_MAX>1029.47</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>30</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1029.47</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkSpeedThres</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>10</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>23</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_clutchReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>EMU clutch request&quot;</DESC>
+      <TEXT>
+        <VALUE>FAST_DISENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_ENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>COMFORT_ENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>COMFORT_DISENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NO_REQUEST</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_clutchReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>3</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>28</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_hvOnRequest</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>HV is requested, to be used to turn on internal PS&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_hvOnRequest</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>61</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_iLimitMax</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Current limit for torque generated in the EDU's forward direction&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>A</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>511</PHY_MAX>
+        <ORG_PHY_UNIT>A</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>511</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_iLimitMax</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>9</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_iLimitMin</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Current limit for torque generated in the EDU's reverse direction&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>A</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>511</PHY_MAX>
+        <ORG_PHY_UNIT>A</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>511</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_iLimitMin</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>9</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>21</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_inverterStateReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>EMU control state request&quot;</DESC>
+      <TEXT>
+        <VALUE>ACTIVE_SHORT_CIRCUIT</VALUE>
+        <COD_LOWER_LIMIT>0x6</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x6</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>ACTIVE_DISCHARGE</VALUE>
+        <COD_LOWER_LIMIT>0x5</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x5</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>SPEED_CONTROL</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CALIBRATE</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NOT_USED</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TORQUE_CONTROL</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>PASSIVE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EduPrim_EMU_EDU_inverterStateReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>3</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_outputShaftTorqueReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>EMU control torque request&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>Nm_SI</PHY_UNIT>
+        <PHY_MIN>-2900</PHY_MIN>
+        <PHY_MAX>2900</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2900</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2900</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xF4AC</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xB54</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EduPrim_EMU_EDU_outputShaftTorqueReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>15</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_outputShaftTrqMax</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Wheel Speed Max limit in Speed Control Mode&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>Nm_SI</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>2900</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2900</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xB54</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EduPrim_EMU_EDU_outputShaftTrqMax</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>22</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_outputShaftTrqMin</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Wheel Speed Min limit in Speed Control Mode&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>Nm_SI</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>2900</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2900</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xB54</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EduPrim_EMU_EDU_outputShaftTrqMin</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>35</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_pwtCoolantFlow</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Powertrain coolant loop flow value North&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>lpm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>15</PHY_MAX>
+        <ORG_PHY_UNIT>lpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>15</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3C</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EduPrim_EMU_EDU_pwtCoolantFlow</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>6</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_pwtCoolantFlowValid</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Powertrain coolant loop flow valid North&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_pwtCoolantFlowValid</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>18</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_wheelRpmGbxSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Speed of the gearbox-side/Q2 wheel in vehicle reference frame&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xE000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FC0</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmGbxSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>14</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>47</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_wheelRpmMtrSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Speed of the motor-side/Q1 wheel in vehicle reference frame&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xE000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FC0</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmMtrSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>14</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>32</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_wheelRpmValidGbxSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Validity flag for the gearbox-side/Q2 wheel speed&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmValidGbxSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>46</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_wheelRpmValidMtrSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Validity flag for the motor-side/Q1 wheel speed&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmValidMtrSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>31</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_EDU_wheelSpeedTarget</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Wheel Speed Target in Speed Control Mode&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xF000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFE0</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelSpeedTarget</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>31</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_EMU_nmStateReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC></DESC>
+      <TEXT>
+        <VALUE>SLEEP</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NORMAL_OPERATION</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_nmStateReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>4</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>0</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_TBC_EMU_inverterInletNorthTemp</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Temperature of the coolant at the inverter inlet. (north)</DESC>
+      <NUM>
+        <PHY_UNIT>C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x672</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>TBC_EMU_inverterInletNorthTemp</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>11</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>0</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPrim_TBC_EMU_inverterInletSouthTemp</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Temperature of the coolant at the inverter inlet. (south)</DESC>
+      <NUM>
+        <PHY_UNIT>C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x672</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>TBC_EMU_inverterInletSouthTemp</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>11</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>11</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_ConSt</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Actual connection state</DESC>
+      <TEXT>
+        <VALUE>Fault</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Connected (end-stop reached)</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>In Transition (pot. connected)</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Disconnected</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Init</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_ConSt</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>4</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_EmSpdCtrlModReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Request by ACU to PE for EM speed control mode</DESC>
+      <TEXT>
+        <VALUE>EM speed control requested</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>EM speed control not requested</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_EmSpdCtrlModReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>34</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_EmSpdTgt</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>ACU EM target speed</DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>-16000</PHY_MIN>
+        <PHY_MAX>16767.5</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-16000</ORG_PHY_MIN>
+        <ORG_PHY_MAX>16767.5</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x7D00</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_EmSpdTgt</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>16</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_EmTqCtrlModReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Request by ACU to PE for EM torque control mode</DESC>
+      <TEXT>
+        <VALUE>EM torque control requested</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>EM torque control not requested</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_EmTqCtrlModReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>33</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_EmTqTgt</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>ACU EM target torque</DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>-64</PHY_MIN>
+        <PHY_MAX>63.5</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-64</ORG_PHY_MIN>
+        <ORG_PHY_MAX>63.5</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x80</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_EmTqTgt</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>8</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>28</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_OperSt</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>ACU operation state
+Further Explanation to Error States:
+0xC: Temporarely Unavailable (no interference required)
+0xD: Unavailable Recoverable (reset by VCU possible)
+0xE: Permanently Unavailable (CL15 cycle required)</DESC>
+      <TEXT>
+        <VALUE>Shutdown</VALUE>
+        <COD_LOWER_LIMIT>0xF</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xF</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Permanently Unavailable</VALUE>
+        <COD_LOWER_LIMIT>0xE</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xE</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Unavailable Recoverable</VALUE>
+        <COD_LOWER_LIMIT>0xD</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xD</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Temporarily Unavailable</VALUE>
+        <COD_LOWER_LIMIT>0xC</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xC</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Calibrating</VALUE>
+        <COD_LOWER_LIMIT>0xB</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xB</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Calibration Required</VALUE>
+        <COD_LOWER_LIMIT>0xA</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xA</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Referencing</VALUE>
+        <COD_LOWER_LIMIT>0x9</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x9</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Referencing Required</VALUE>
+        <COD_LOWER_LIMIT>0x8</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x8</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Dead Code</VALUE>
+        <COD_LOWER_LIMIT>0x5</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x5</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Functions Available</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Waiting for Switch Test</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Initializing</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_OperSt</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>4</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>40</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_TqLimMax</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Max. traction motor torque limit requested by ACU</DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>510</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>510</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_TqLimMax</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>8</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>24</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_TqLimMin</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Min. traction motor torque limit requested by ACU</DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>-510</PHY_MIN>
+        <PHY_MAX>0</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-510</ORG_PHY_MIN>
+        <ORG_PHY_MAX>0</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0xFF</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_TqLimMin</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>8</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>16</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduPriv_ACU_TqLimReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>ACU torque limit request (activation of requested torque limits)</DESC>
+      <TEXT>
+        <VALUE>Torque limitation active</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Torque limitation inactive</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>ACU_TqLimReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>32</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_antiJerkEnable</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC></DESC>
+      <TEXT>
+        <VALUE>DISABLE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>ENABLE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkEnable</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_antiJerkGain</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0.15</PHY_MIN>
+        <PHY_MAX>10.38</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0.15</ORG_PHY_MIN>
+        <ORG_PHY_MAX>10.38</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkGain</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>10</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>13</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_antiJerkMaxTorq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>40</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>40</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x40</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkMaxTorq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>7</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>40</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_antiJerkMinTorq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>40</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>40</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x40</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkMinTorq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>7</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>33</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_antiJerkSpeedThres</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC></DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>30</PHY_MIN>
+        <PHY_MAX>1029.47</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>30</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1029.47</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_antiJerkSpeedThres</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>10</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>23</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_clutchReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>EMU clutch request&quot;</DESC>
+      <TEXT>
+        <VALUE>FAST_DISENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_ENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>COMFORT_ENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>COMFORT_DISENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NO_REQUEST</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_clutchReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>3</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>28</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_hvOnRequest</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>HV is requested, to be used to turn on internal PS&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>unit1</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>unit1</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_iLimitMax</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Current limit for torque generated in the EDU's forward direction&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>A</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>511</PHY_MAX>
+        <ORG_PHY_UNIT>A</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>511</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU2_iLimitMax</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>9</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_iLimitMin</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Current limit for torque generated in the EDU's reverse direction&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>A</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>511</PHY_MAX>
+        <ORG_PHY_UNIT>A</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>511</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU2_iLimitMin</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>9</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>21</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_inverterStateReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>EMU control state request&quot;</DESC>
+      <TEXT>
+        <VALUE>ACTIVE_SHORT_CIRCUIT</VALUE>
+        <COD_LOWER_LIMIT>0x6</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x6</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>ACTIVE_DISCHARGE</VALUE>
+        <COD_LOWER_LIMIT>0x5</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x5</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>SPEED_CONTROL</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CALIBRATE</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NOT_USED</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TORQUE_CONTROL</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>PASSIVE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_inverterStateReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>3</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_outputShaftTorqueReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>EMU control torque request&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>Nm_Sl</PHY_UNIT>
+        <PHY_MIN>-2900</PHY_MIN>
+        <PHY_MAX>2900</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2900</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2900</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xF4AC</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xB54</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_outputShaftTorqueReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>15</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_outputShaftTrqMax</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Wheel Speed Max limit in Speed Control Mode&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>2900</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2900</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xB54</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_outputShaftTrqMax</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>22</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_outputShaftTrqMin</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Wheel Speed Min limit in Speed Control Mode&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>Nm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>2900</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2900</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xB54</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_outputShaftTrqMin</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>35</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_pwtCoolantFlow</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Powertrain coolant loop flow value North&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>lpm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>15</PHY_MAX>
+        <ORG_PHY_UNIT>lpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>15</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3C</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_pwtCoolantFlow</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>6</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>12</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_pwtCoolantFlowValid</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Powertrain coolant loop flow valid North&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <START_BIT>18</START_BIT>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_wheelRpmGbxSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Speed of the gearbox-side/Q2 wheel in vehicle reference frame&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xE000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FC0</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmGbxSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>14</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>47</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_wheelRpmMtrSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Speed of the motor-side/Q1 wheel in vehicle reference frame&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xE000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1FC0</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmMtrSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>14</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>32</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_wheelRpmValidGbxSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Validity flag for the gearbox-side/Q2 wheel speed&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmValidGbxSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>46</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_wheelRpmValidMtrSide</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Validity flag for the motor-side/Q1 wheel speed&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelRpmValidMtrSide</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>1</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>31</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_EDU_wheelSpeedTarget</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Wheel Speed Target in Speed Control Mode&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0xF000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFE0</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_EDU1_wheelSpeedTarget</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>13</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>31</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_EMU_nmStateReq</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC></DESC>
+      <TEXT>
+        <VALUE>SLEEP</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NORMAL_OPERATION</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <SHORT_NAME>EMU_nmStateReq</SHORT_NAME>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>4</BIT_LENGTH>
+      <IS_QBIT>false</IS_QBIT>
+      <START_BIT>0</START_BIT>
+      <MUX_NAME></MUX_NAME>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_TBC_EMU_inverterInletNorthTemp</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Temperature of the coolant at the inverter inlet. (north)</DESC>
+      <NUM>
+        <PHY_UNIT>C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x672</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>11</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>EduSec_TBC_EMU_inverterInletSouthTemp</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Temperature of the coolant at the inverter inlet. (south)</DESC>
+      <NUM>
+        <PHY_UNIT>C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x672</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>11</BIT_LENGTH>
+      <START_BIT>11</START_BIT>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>S16Dummy</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>unit1</PHY_UNIT>
+        <PHY_MIN>-32768</PHY_MIN>
+        <PHY_MAX>32767</PHY_MAX>
+        <ORG_PHY_UNIT>unit1</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-32768</ORG_PHY_MIN>
+        <ORG_PHY_MAX>32767</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x8000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x7FFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x8000</COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>16</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>U16Dummy</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>unit1</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>65535</PHY_MAX>
+        <ORG_PHY_UNIT>unit1</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>65535</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x00</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0xFFFF</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>16</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>U8Dummy</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>unit1</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>255</PHY_MAX>
+        <ORG_PHY_UNIT>unit1</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>255</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x00</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xff</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0xFF</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>8</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>U8DummyText1</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>FAST_DISENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_ENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>COMFORT_ENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>COMFORT_DISENGAGE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NO_REQUEST</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0xFF</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>8</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>U8DummyText2</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>ACTIVE_SHORT_CIRCUIT</VALUE>
+        <COD_LOWER_LIMIT>0x6</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x6</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>ACTIVE_DISCHARGE</VALUE>
+        <COD_LOWER_LIMIT>0x5</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x5</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>SPEED_CONTROL</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CALIBRATE</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>NOT_USED</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TORQUE_CONTROL</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>PASSIVE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0xFF</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>8</BIT_LENGTH>
+    </BUS_SIGNAL>
+    <BUS_SIGNAL>
+      <NAME>U8DummyText3</NAME>
+      <DIR>RX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>NORMAL_OPERATION</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>SLEEP</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0xFF</COD_INVALID>
+      <INTERFACE_TYPE>API</INTERFACE_TYPE>
+      <OUTPUT_NAME>ipl_hook_rx_priv</OUTPUT_NAME>
+      <BIT_LENGTH>8</BIT_LENGTH>
+    </BUS_SIGNAL>
+  </BUS_SIGNALS>
+  <SYS_SIGNALS>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuConnectionSt</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Operational state of electrical machine clutch</DESC>
+      <TEXT>
+        <VALUE>INI</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>DISCNCT</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRAN</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CNCT</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>ERR</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuConnectionSt</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuEmSpdCtlModReq</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Clutch is requesting to activate speed control</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuEmSpdCtlModReq</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuEmSpdTar</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine speed requested by clutch</DESC>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-32768</PHY_MIN>
+        <PHY_MAX>32767</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-32768</ORG_PHY_MIN>
+        <ORG_PHY_MAX>32767</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x8000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x7FFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuEmSpdTar</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuEmTqCtlModReq</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Clutch is  requesting to activate torque control</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuEmTqCtlModReq</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuEmTqTar</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine torque requested by clutch</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuEmTqTar</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuOperSt</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>ACU operation status</DESC>
+      <TEXT>
+        <VALUE>Init</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Referencing</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Ready</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CAN error</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Shift error</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Preperation power down</VALUE>
+        <COD_LOWER_LIMIT>0x5</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x5</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>Power down</VALUE>
+        <COD_LOWER_LIMIT>0x6</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x6</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AcuOperSt</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuTqLimMax</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Maximum electrical machine torque requested by clutch</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuTqLimMax</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuTqLimMin</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Minimum electrical machine torque requested by clutch</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuTqLimMin</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AcuTqLimReq</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>State of electric machine torque limitation selection according to ACU control</DESC>
+      <TEXT>
+        <VALUE>EXT</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CLU</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AcuTqLimReq</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkEna</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>External anti-jerk active</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AntiJerkEna</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkEna_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>External anti-jerk active</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkEna_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkEna_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>External anti-jerk active</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE </VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkEna_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkEnaSpdThd</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>External electrical machine speed oscillation threshold for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Pers</PHY_UNIT>
+        <PHY_MIN>-512</PHY_MIN>
+        <PHY_MAX>511.984375</PHY_MAX>
+        <ORG_PHY_UNIT>Pers</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-512</ORG_PHY_MIN>
+        <ORG_PHY_MAX>511.984375</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AntiJerkEnaSpdThd</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkEnaSpdThd_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>External electrical machine speed oscillation threshold for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Pers</PHY_UNIT>
+        <PHY_MIN>-512</PHY_MIN>
+        <PHY_MAX>511.984375</PHY_MAX>
+        <ORG_PHY_UNIT>Pers</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-512</ORG_PHY_MIN>
+        <ORG_PHY_MAX>511.984375</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkEnaSpdThd_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkEnaSpdThd_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>External electrical machine speed oscillation threshold for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Pers</PHY_UNIT>
+        <PHY_MIN>-512</PHY_MIN>
+        <PHY_MAX>511.984375</PHY_MAX>
+        <ORG_PHY_UNIT>Pers</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-512</ORG_PHY_MIN>
+        <ORG_PHY_MAX>511.984375</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkEnaSpdThd_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkGain</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>External amplification factor for dynamic electrical machine torque path of anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NmMuls</PHY_UNIT>
+        <PHY_MIN>-524288</PHY_MIN>
+        <PHY_MAX>524272</PHY_MAX>
+        <ORG_PHY_UNIT>NmMuls</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-524288</ORG_PHY_MIN>
+        <ORG_PHY_MAX>524272</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AntiJerkGain</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkGain_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>External amplification factor for dynamic electrical machine torque path of anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NmMuls</PHY_UNIT>
+        <PHY_MIN>-524288</PHY_MIN>
+        <PHY_MAX>524272</PHY_MAX>
+        <ORG_PHY_UNIT>NmMuls</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-524288</ORG_PHY_MIN>
+        <ORG_PHY_MAX>524272</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkGain_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkGain_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>External amplification factor for dynamic electrical machine torque path of anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NmMuls</PHY_UNIT>
+        <PHY_MIN>-524288</PHY_MIN>
+        <PHY_MAX>524272</PHY_MAX>
+        <ORG_PHY_UNIT>NmMuls</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-524288</ORG_PHY_MIN>
+        <ORG_PHY_MAX>524272</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkGain_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkTqLimMax</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Requested maximum electric machine torque limit for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AntiJerkTqLimMax</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkTqLimMax_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Requested maximum electric machine torque limit for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkTqLimMax_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkTqLimMax_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Requested maximum electric machine torque limit for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>99</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>99</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkTqLimMax_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkTqLimMin</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Requested minimum electric machine torque limit for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_AntiJerkTqLimMin</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkTqLimMin_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Requested minimum electric machine torque limit for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkTqLimMin_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_AntiJerkTqLimMin_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Requested minimum electric machine torque limit for anti-jerk</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-1024</PHY_MIN>
+        <PHY_MAX>1023.96875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-1024</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1023.96875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_AntiJerkTqLimMin_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_LvUHvsReqExtEna</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>External request to enable high voltage</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_LvUHvsReqExtEna</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_LvUHvsReqExtEna_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>External request to enable high voltage</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_LvUHvsReqExtEna_Prim</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_LvUHvsReqExtEna_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>External request to enable high voltage</DESC>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_LvUHvsReqExtEna_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCluAxleSet</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Gearbox clutch engage and disengage mode request</DESC>
+      <TEXT>
+        <VALUE>NONE_REQ</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CFT_DISCNCT</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CFT_CNCT</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_CNCT</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_DISCNCT</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehCluAxleSet</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCluAxleSet_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Gearbox clutch engage and disengage mode request</DESC>
+      <TEXT>
+        <VALUE>NONE_REQ</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CFT_DISCNCT</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CFT_CNCT</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_CNCT</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_DISCNCT</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCluAxleSet_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCluAxleSet_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <DESC>Gearbox clutch engage and disengage mode request</DESC>
+      <TEXT>
+        <VALUE>NONE_REQ</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CFT_DISCNCT</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>CFT_CNCT</VALUE>
+        <COD_LOWER_LIMIT>0x2</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x2</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_CNCT</VALUE>
+        <COD_LOWER_LIMIT>0x3</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x3</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>FAST_DISCNCT</VALUE>
+        <COD_LOWER_LIMIT>0x4</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x4</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCluAxleSet_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInT_North</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Inlet water coolant temperature from external source</DESC>
+      <NUM>
+        <PHY_UNIT>PD_C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInT_North</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInT_North_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Inlet water coolant temperature from external source</DESC>
+      <NUM>
+        <PHY_UNIT>PD_C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehCooltInvInT_North_Prim</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInT_North_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Inlet water coolant temperature from external source</DESC>
+      <NUM>
+        <PHY_UNIT>PD_C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInT_North_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInT_South</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Inlet water coolant temperature from external source</DESC>
+      <NUM>
+        <PHY_UNIT>PD_C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInT_South</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInT_South_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Inlet water coolant temperature from external source</DESC>
+      <NUM>
+        <PHY_UNIT>PD_C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInT_South_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInT_South_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Inlet water coolant temperature from external source</DESC>
+      <NUM>
+        <PHY_UNIT>PD_C</PHY_UNIT>
+        <PHY_MIN>-40</PHY_MIN>
+        <PHY_MAX>125</PHY_MAX>
+        <ORG_PHY_UNIT>C</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-40</ORG_PHY_MIN>
+        <ORG_PHY_MAX>125</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInT_South_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInVolFlow</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Coolant volume flow</DESC>
+      <NUM>
+        <PHY_UNIT>PD_lpm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>15</PHY_MAX>
+        <ORG_PHY_UNIT>lpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>15</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehCooltInvInVolFlow</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInVolFlow_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Coolant volume flow</DESC>
+      <NUM>
+        <PHY_UNIT>PD_lpm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>15</PHY_MAX>
+        <ORG_PHY_UNIT>lpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>15</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInVolFlow_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInVolFlow_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Coolant volume flow</DESC>
+      <NUM>
+        <PHY_UNIT>PD_lpm</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>15</PHY_MAX>
+        <ORG_PHY_UNIT>lpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>15</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInVolFlow_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInVolFlowVld</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Powertrain coolant loop flow valid North&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInVolFlowVld</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInVolFlowVld_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Powertrain coolant loop flow valid North&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x00</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInVolFlowVld_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehCooltInvInVolFlowVld_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Powertrain coolant loop flow valid North&quot;</DESC>
+      <NUM>
+        <PHY_UNIT>NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehCooltInvInVolFlowVld_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehHvDcILimMax</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Signal representing predicted maximum DC link current coming from the communication</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>65535</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>65535</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehHvDcILimMax</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehHvDcILimMax_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Signal representing predicted maximum DC link current coming from the communication</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>65535</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>65535</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehHvDcILimMax_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehHvDcILimMax_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Signal representing predicted maximum DC link current coming from the communication</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>65535</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>65535</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehHvDcILimMax_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehHvDcILimMin</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Signal representing predicted minimum DC link current coming from the communication</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>65535</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>65535</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehHvDcILimMin</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehHvDcILimMin_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Signal representing predicted minimum DC link current coming from the communication</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>65535</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>65535</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehHvDcILimMin_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehHvDcILimMin_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Signal representing predicted minimum DC link current coming from the communication</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>65535</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>65535</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFFFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehHvDcILimMin_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehNetMngtReq</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Network management state request</DESC>
+      <NUM>
+        <PHY_UNIT></PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT></ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x00</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x01</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehNetMngtReq</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehNetMngtReq_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Network management state request</DESC>
+      <NUM>
+        <PHY_UNIT></PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT></ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x00</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x01</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehNetMngtReq_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehNetMngtReq_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Network management state request</DESC>
+      <NUM>
+        <PHY_UNIT></PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>1</PHY_MAX>
+        <ORG_PHY_UNIT></ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>1</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x00</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x01</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT>0x0</COD_INIT>
+      <COD_INVALID>0x0</COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehNetMngtReq_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehPeModeReq</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine state requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>255</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>255</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehPeModeReq</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehPeModeReq_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine state requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>255</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>255</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehPeModeReq_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehPeModeReq_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine state requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_NoUnit</PHY_UNIT>
+        <PHY_MIN>0</PHY_MIN>
+        <PHY_MAX>255</PHY_MAX>
+        <ORG_PHY_UNIT>NoUnit</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>0</ORG_PHY_MIN>
+        <ORG_PHY_MAX>255</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0xFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>U8</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehPeModeReq_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpd1</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpd1</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpd1_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpd1_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpd1_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpd1_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpd2</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpd2</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpd2_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpd2_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpd2_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-2048</PHY_MIN>
+        <PHY_MAX>2032</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-2048</ORG_PHY_MIN>
+        <ORG_PHY_MAX>2032</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpd2_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdTgt</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine speed requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-32768</PHY_MIN>
+        <PHY_MAX>32767</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-32768</ORG_PHY_MIN>
+        <ORG_PHY_MAX>32767</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x8000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x7FFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehWhlSpdTgt</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdTgt_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine speed requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-32768</PHY_MIN>
+        <PHY_MAX>32767</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-32768</ORG_PHY_MIN>
+        <ORG_PHY_MAX>32767</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x8000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x7FFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdTgt_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdTgt_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine speed requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_rpm</PHY_UNIT>
+        <PHY_MIN>-32768</PHY_MIN>
+        <PHY_MAX>32767</PHY_MAX>
+        <ORG_PHY_UNIT>rpm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-32768</ORG_PHY_MIN>
+        <ORG_PHY_MAX>32767</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT>0x8000</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x7FFF</COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>S16</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdTgt_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_16</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdVld1</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdVld1</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdVld1_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdVld1_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdVld1_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdVld1_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdVld2</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdVld2</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdVld2_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdVld2_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlSpdVld2_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>TEXT</CATEGORY>
+      <TEXT>
+        <VALUE>FALSE</VALUE>
+        <COD_LOWER_LIMIT>0x0</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x0</COD_UPPER_LIMIT>
+      </TEXT>
+      <TEXT>
+        <VALUE>TRUE</VALUE>
+        <COD_LOWER_LIMIT>0x1</COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT>0x1</COD_UPPER_LIMIT>
+      </TEXT>
+      <COD_DTYPE>FLAG</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlSpdVld2_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_8</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqMaxLim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Maximum electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehWhlTqMaxLim</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqMaxLim_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Maximum electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlTqMaxLim_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqMaxLim_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Maximum electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlTqMaxLim_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqMinLim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Minimum electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehWhlTqMinLim</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqMinLim_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Minimum electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlTqMinLim_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqMinLim_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Minimum electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlTqMinLim_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqTgt</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <IS_CONDITIONAL>false</IS_CONDITIONAL>
+      <ARRAY_LENGTH>0</ARRAY_LENGTH>
+      <COD_NAME>Pl_VehWhlTqTgt</COD_NAME>
+      <VAR_TYPE>variable</VAR_TYPE>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+      <EXT_VALIDITY xsi:nil="true"/>
+      <SUMAUX_NAME xsi:nil="true"/>
+      <AUX_RANGE xsi:nil="true"/>
+      <AUX_QUALITY xsi:nil="true"/>
+      <VISIBLE>false</VISIBLE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqTgt_Prim</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlTqTgt_Prim</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+    <SYS_SIGNAL>
+      <NAME>Pl_VehWhlTqTgt_Sec</NAME>
+      <DIR>TX</DIR>
+      <CATEGORY>NUM</CATEGORY>
+      <DESC>Electrical machine torque requested by main external function</DESC>
+      <NUM>
+        <PHY_UNIT>PD_Nm</PHY_UNIT>
+        <PHY_MIN>-4096</PHY_MIN>
+        <PHY_MAX>4095.875</PHY_MAX>
+        <ORG_PHY_UNIT>Nm</ORG_PHY_UNIT>
+        <ORG_PHY_MIN>-4096</ORG_PHY_MIN>
+        <ORG_PHY_MAX>4095.875</ORG_PHY_MAX>
+        <COD_LOWER_LIMIT></COD_LOWER_LIMIT>
+        <COD_UPPER_LIMIT></COD_UPPER_LIMIT>
+      </NUM>
+      <COD_DTYPE>FLOAT</COD_DTYPE>
+      <COD_INIT></COD_INIT>
+      <COD_INVALID></COD_INVALID>
+      <INTERFACE_TYPE>VAR</INTERFACE_TYPE>
+      <COD_NAME>Pl_VehWhlTqTgt_Sec</COD_NAME>
+      <VAR_MEM_LOC_DEF>#define MEM_DATA MEM_DATA_PUBLIC_32</VAR_MEM_LOC_DEF>
+      <VAR_MEM_LOC_DEF_INCLUDE>#include &lt;gmem.h></VAR_MEM_LOC_DEF_INCLUDE>
+    </SYS_SIGNAL>
+  </SYS_SIGNALS>
+  <MAPPINGS>
+    <MAPPING ID="Mapping00072">
+      <BUS_SIGNAL_REF>EduPriv_ACU_ConSt</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuConnectionSt</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <TEXTTABLE>
+        <MAP>
+          <SRC>Init</SRC>
+          <DST>INI</DST>
+        </MAP>
+        <MAP>
+          <SRC>Disconnected</SRC>
+          <DST>DISCNCT</DST>
+        </MAP>
+        <MAP>
+          <SRC>In Transition (pot. connected)</SRC>
+          <DST>TRAN</DST>
+        </MAP>
+        <MAP>
+          <SRC>Connected (end-stop reached)</SRC>
+          <DST>CNCT</DST>
+        </MAP>
+        <MAP>
+          <SRC>Fault</SRC>
+          <DST>ERR</DST>
+        </MAP>
+      </TEXTTABLE>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00073">
+      <BUS_SIGNAL_REF>EduPriv_ACU_EmSpdCtrlModReq</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuEmSpdCtlModReq</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <TEXTTABLE>
+        <MAP>
+          <SRC>EM speed control not requested</SRC>
+          <DST>FALSE</DST>
+        </MAP>
+        <MAP>
+          <SRC>EM speed control requested</SRC>
+          <DST>TRUE</DST>
+        </MAP>
+      </TEXTTABLE>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00074">
+      <BUS_SIGNAL_REF>EduPriv_ACU_EmSpdTgt</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuEmSpdTar</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00075">
+      <BUS_SIGNAL_REF>EduPriv_ACU_EmTqCtrlModReq</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuEmTqCtlModReq</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <TEXTTABLE>
+        <MAP>
+          <SRC>EM torque control not requested</SRC>
+          <DST>FALSE</DST>
+        </MAP>
+        <MAP>
+          <SRC>EM torque control requested</SRC>
+          <DST>TRUE</DST>
+        </MAP>
+      </TEXTTABLE>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00076">
+      <BUS_SIGNAL_REF>EduPriv_ACU_EmTqTgt</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuEmTqTar</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00077">
+      <BUS_SIGNAL_REF>EduPriv_ACU_TqLimMax</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuTqLimMax</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00078">
+      <BUS_SIGNAL_REF>EduPriv_ACU_TqLimMin</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuTqLimMin</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00079">
+      <BUS_SIGNAL_REF>EduPriv_ACU_TqLimReq</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuTqLimReq</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <TEXTTABLE>
+        <MAP>
+          <SRC>Torque limitation inactive</SRC>
+          <DST>EXT</DST>
+        </MAP>
+        <MAP>
+          <SRC>Torque limitation active</SRC>
+          <DST>CLU</DST>
+        </MAP>
+      </TEXTTABLE>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+    <MAPPING ID="Mapping00112">
+      <BUS_SIGNAL_REF>EduPriv_ACU_OperSt</BUS_SIGNAL_REF>
+      <SYS_SIGNAL_REF>Pl_AcuOperSt</SYS_SIGNAL_REF>
+      <PROCESSING>UNCONDITIONAL</PROCESSING>
+      <TEXTTABLE>
+        <MAP>
+          <SRC>Initializing</SRC>
+          <DST>Init</DST>
+        </MAP>
+        <MAP>
+          <SRC>Referencing</SRC>
+          <DST>Referencing</DST>
+        </MAP>
+        <MAP>
+          <SRC>Functions Available</SRC>
+          <DST>Ready</DST>
+        </MAP>
+        <MAP>
+          <SRC>Shutdown</SRC>
+          <DST>Power down</DST>
+        </MAP>
+      </TEXTTABLE>
+      <PRE_CVT>DISABLED</PRE_CVT>
+      <INITIALIZATION>DISABLED</INITIALIZATION>
+      <INVALIDATION>DISABLED</INVALIDATION>
+      <EXT_CONVERSION>DISABLED</EXT_CONVERSION>
+      <LIMITATION>AUTO</LIMITATION>
+      <POST_CVT>DISABLED</POST_CVT>
+      <OUT_OFF_RANGE>CANCEL</OUT_OFF_RANGE>
+    </MAPPING>
+  </MAPPINGS>
+  <SIGNAL_GROUPS/>
+  <COMPLEX_SIGNALS/>
+  <PDUS>
+    <PDU>
+      <NAME>ACU_01</NAME>
+      <SHORT_NAME>ACU_01</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x21</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>10.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>ACU_02</NAME>
+      <SHORT_NAME>ACU_02</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x20</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>10.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>ACU_AppInfo_0</NAME>
+      <SHORT_NAME>ACU_AppInfo_0</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME>ACU_AppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_AppInfo_1</NAME>
+      <SHORT_NAME>ACU_AppInfo_1</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME>ACU_AppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_AppInfo_2</NAME>
+      <SHORT_NAME>ACU_AppInfo_2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME>ACU_AppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_AppInfo_3</NAME>
+      <SHORT_NAME>ACU_AppInfo_3</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME>ACU_AppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_AppInfo_4</NAME>
+      <SHORT_NAME>ACU_AppInfo_4</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME>ACU_AppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_BootInfo</NAME>
+      <SHORT_NAME>ACU_BootInfo</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_CluDbgFb</NAME>
+      <SHORT_NAME>ACU_CluDbgFb</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION>Info message for customer, will be routed by PE to vehicle CAN</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_Diag</NAME>
+      <SHORT_NAME>ACU_Diag</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>ACU_UdsResponse</NAME>
+      <SHORT_NAME>ACU_UdsResponse</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_alertStatus_0</NAME>
+      <SHORT_NAME>EDU1_alertStatus_0</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 alerts&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_alertStatus</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_alertStatus_1</NAME>
+      <SHORT_NAME>EDU1_alertStatus_1</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 alerts&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_alertStatus</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_alertStatus_2</NAME>
+      <SHORT_NAME>EDU1_alertStatus_2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 alerts&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_alertStatus</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_alertStatus_3</NAME>
+      <SHORT_NAME>EDU1_alertStatus_3</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 alerts&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_alertStatus</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_alertStatus_4</NAME>
+      <SHORT_NAME>EDU1_alertStatus_4</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 alerts&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_alertStatus</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_alertStatus_5</NAME>
+      <SHORT_NAME>EDU1_alertStatus_5</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 alerts&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_alertStatus</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_alertStatus_6</NAME>
+      <SHORT_NAME>EDU1_alertStatus_6</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 alerts&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_alertStatus</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_clutchAppInfo_0</NAME>
+      <SHORT_NAME>EDU1_clutchAppInfo_0</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 clutch app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_clutchAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_clutchAppInfo_1</NAME>
+      <SHORT_NAME>EDU1_clutchAppInfo_1</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 clutch app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_clutchAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_clutchAppInfo_2</NAME>
+      <SHORT_NAME>EDU1_clutchAppInfo_2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 clutch app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_clutchAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_clutchAppInfo_3</NAME>
+      <SHORT_NAME>EDU1_clutchAppInfo_3</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 clutch app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_clutchAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_clutchAppInfo_4</NAME>
+      <SHORT_NAME>EDU1_clutchAppInfo_4</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 clutch app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_clutchAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_clutchBootInfo</NAME>
+      <SHORT_NAME>EDU1_clutchBootInfo</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_clutchDebugFbk</NAME>
+      <SHORT_NAME>EDU1_clutchDebugFbk</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>Clutch1 Feedback&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_dynamics</NAME>
+      <SHORT_NAME>EDU1_dynamics</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 motor feedback&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_eduFbk1</NAME>
+      <SHORT_NAME>EDU1_eduFbk1</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 inverter status 1&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_eduFbk2</NAME>
+      <SHORT_NAME>EDU1_eduFbk2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 inverter status 2&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_inverterAppInfo_0</NAME>
+      <SHORT_NAME>EDU1_inverterAppInfo_0</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 inverter app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_inverterAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_inverterAppInfo_1</NAME>
+      <SHORT_NAME>EDU1_inverterAppInfo_1</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 inverter app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_inverterAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_inverterAppInfo_2</NAME>
+      <SHORT_NAME>EDU1_inverterAppInfo_2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 inverter app info&quot;</DESCRIPTION>
+      <MUX_NAME>EDU1_inverterAppInfo</MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_inverterBootInfo</NAME>
+      <SHORT_NAME>EDU1_inverterBootInfo</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_nmResponse</NAME>
+      <SHORT_NAME>EDU1_nmResponse</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_tempFbk</NAME>
+      <SHORT_NAME>EDU1_tempFbk</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EDU1 temperatures&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_UDS_clutchResponse</NAME>
+      <SHORT_NAME>EDU1_UDS_clutchResponse</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EDU1_UDS_inverterResponse</NAME>
+      <SHORT_NAME>EDU1_UDS_inverterResponse</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>Edu_Primary_TBC_EMU_coolantInfo</NAME>
+      <SHORT_NAME>TBC_EMU_coolantInfo</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION>Low rate coolant temperature information from the TBC&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x463</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>1000.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EduPrim_EMU_EDU_ctrlReq1</NAME>
+      <SHORT_NAME>EduPrim_EMU_EDU_ctrlReq1</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>Command from EMU to EDU1&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EduPrim_EMU_EDU_ctrlReq2</NAME>
+      <SHORT_NAME>EduPrim_EMU_EDU_ctrlReq2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>Operational limits for EDU1 and slide prevention control/speed control&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EduPrim_EMU_EDU_ctrlReq3</NAME>
+      <SHORT_NAME>EduPrim_EMU_EDU_ctrlReq3</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EduPrim_EMU_EDU_ctrlReq4</NAME>
+      <SHORT_NAME>EduPrim_EMU_EDU_ctrlReq4</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EduPrim_EMU_EDU_pwtCoolantInfo</NAME>
+      <SHORT_NAME>EduPrim_EMU_EDU_pwtCoolantInfo</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>North Powertrain coolant loop info&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EMU_EDU1_ctrlReq1</NAME>
+      <SHORT_NAME>EMU_EDU1_ctrlReq1</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>Command from EMU to EDU1&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x100</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>10.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EMU_EDU1_ctrlReq2</NAME>
+      <SHORT_NAME>EMU_EDU1_ctrlReq2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>Operational limits for EDU1 and slide prevention control/speed control&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x101</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>10.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EMU_EDU1_ctrlReq3</NAME>
+      <SHORT_NAME>EMU_EDU1_ctrlReq3</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x138</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>10.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EMU_EDU1_ctrlReq4</NAME>
+      <SHORT_NAME>EMU_EDU1_ctrlReq4</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x102</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>10.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EMU_EDU1_pwtCoolantInfo</NAME>
+      <SHORT_NAME>EMU_EDU1_pwtCoolantInfo</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>North Powertrain coolant loop info&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x302</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>100.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EMU_EDU2_ctrlReq2</NAME>
+      <SHORT_NAME>EMU_EDU2_ctrlReq2</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION>Operational limits for EDU2 and slide prevention control/speed control&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x105</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>10.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EMU_nmCommand</NAME>
+      <SHORT_NAME>EMU_nmCommand</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>Zoox network management command&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x550</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>1000.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>EMU_powerStatus</NAME>
+      <SHORT_NAME>EMU_powerStatus</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EMU Power Status&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EMU_utcTimeMsg</NAME>
+      <SHORT_NAME>EMU_utcTimeMsg</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>UTC time broadcast by the EMU at second resolution&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>EMU_vehicleDynamics</NAME>
+      <SHORT_NAME>EMU_vehicleDynamics</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>EMU vehicle dynamics&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>PE_AcuUdsRequest</NAME>
+      <SHORT_NAME>PE_AcuUdsRequest</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>PE_Control</NAME>
+      <SHORT_NAME>PE_Control</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>PE_Performance</NAME>
+      <SHORT_NAME>PE_Performance</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>PE_Vehicle</NAME>
+      <SHORT_NAME>PE_Vehicle</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>TBC_EMU_coolantInfo</NAME>
+      <SHORT_NAME>TBC_EMU_coolantInfo</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION>Low rate coolant temperature information from the TBC&quot;</DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>ID</NAME>
+        <VALUE>0x463</VALUE>
+      </PDU_PROPERTIES_TYPE>
+      <PDU_PROPERTIES_TYPE>
+        <NAME>Recurrence</NAME>
+        <VALUE>1000.0 ms</VALUE>
+      </PDU_PROPERTIES_TYPE>
+    </PDU>
+    <PDU>
+      <NAME>UDS_EDU1_clutchRequest</NAME>
+      <SHORT_NAME>UDS_EDU1_clutchRequest</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+    <PDU>
+      <NAME>UDS_EDU1_inverterRequest</NAME>
+      <SHORT_NAME>UDS_EDU1_inverterRequest</SHORT_NAME>
+      <SECURED>false</SECURED>
+      <AUX_TOUT xsi:nil="true"/>
+      <AUX_PLAUS xsi:nil="true"/>
+      <DESCRIPTION></DESCRIPTION>
+      <MUX_NAME></MUX_NAME>
+    </PDU>
+  </PDUS>
+  <VARIANTS>
+    <VARIANT>
+      <NAME>PrivateCAN</NAME>
+      <MAPPING_REF>Mapping00072</MAPPING_REF>
+      <MAPPING_REF>Mapping00073</MAPPING_REF>
+      <MAPPING_REF>Mapping00074</MAPPING_REF>
+      <MAPPING_REF>Mapping00075</MAPPING_REF>
+      <MAPPING_REF>Mapping00076</MAPPING_REF>
+      <MAPPING_REF>Mapping00077</MAPPING_REF>
+      <MAPPING_REF>Mapping00078</MAPPING_REF>
+      <MAPPING_REF>Mapping00079</MAPPING_REF>
+      <MAPPING_REF>Mapping00112</MAPPING_REF>
+      <DESCRIPTION></DESCRIPTION>
+    </VARIANT>
+  </VARIANTS>
+  <BUSREFS>
+    <BUSREF>
+      <BUSREF_NAME>Edu_Primary</BUSREF_NAME>
+      <PDU_REF>Edu_Primary_TBC_EMU_coolantInfo</PDU_REF>
+      <PDU_REF>EMU_EDU1_ctrlReq1</PDU_REF>
+      <PDU_REF>EMU_EDU1_ctrlReq2</PDU_REF>
+      <PDU_REF>EMU_EDU1_ctrlReq4</PDU_REF>
+      <PDU_REF>EMU_EDU1_pwtCoolantInfo</PDU_REF>
+      <PDU_REF>EMU_nmCommand</PDU_REF>
+      <PDU_REF>TBC_EMU_coolantInfo</PDU_REF>
+    </BUSREF>
+    <BUSREF>
+      <BUSREF_NAME>Edu_Private</BUSREF_NAME>
+      <PDU_REF>ACU_01</PDU_REF>
+      <PDU_REF>ACU_02</PDU_REF>
+    </BUSREF>
+    <BUSREF>
+      <BUSREF_NAME>Edu_Secondary</BUSREF_NAME>
+      <PDU_REF>EMU_EDU1_ctrlReq1</PDU_REF>
+      <PDU_REF>EMU_EDU1_ctrlReq2</PDU_REF>
+      <PDU_REF>EMU_EDU1_ctrlReq3</PDU_REF>
+      <PDU_REF>EMU_EDU1_ctrlReq4</PDU_REF>
+      <PDU_REF>EMU_EDU1_pwtCoolantInfo</PDU_REF>
+      <PDU_REF>EMU_EDU2_ctrlReq2</PDU_REF>
+      <PDU_REF>EMU_nmCommand</PDU_REF>
+      <PDU_REF>TBC_EMU_coolantInfo</PDU_REF>
+    </BUSREF>
+  </BUSREFS>
+</PL_ROOT>
