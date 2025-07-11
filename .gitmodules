@@ -1,3 +1,6 @@
 [submodule "work/submodule"]
 	path = work/submodule
 	url = https://github.com/gouravch1999/submodule.git
+[submodule "work/Module"]
+	path = work/Module
+	url = https://github.com/gouravch1999/Module.git
